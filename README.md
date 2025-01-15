@@ -1,226 +1,134 @@
 
-<img src="https://github.com/DARJYO/persadian-llm/blob/main/public/social_preview_index.jpg" height="100%" width="100%">    
+<img src="" height="100%" width="100%">    
 
-Choose the LLM that you use for each prompt! Currently, you can use OpenAI, Anthropic, Ollama, OpenRouter, Gemini, LMStudio, Mistral, xAI, HuggingFace, DeepSeek, or Groq models - and it is easily extended to use any other model supported by the Vercel AI SDK! See the instructions below for running this locally and extending it to include more models.
+# Agri-LLM
+
+Agri-LLM is an AI-powered language model tailored for the agriculture industry. It leverages natural language processing (NLP) to provide farmers, agribusinesses, and policymakers with actionable insights, predictive analytics, and multilingual conversational capabilities. Developed by DARJYO, Agri-LLM aims to revolutionize agricultural intelligence and foster sustainability.
+
+---
 
 ## Features
 
-- **AI-powered full-stack web development** directly in your browser.
-- **Support for multiple LLMs** with an extensible architecture to integrate additional models.
-- **Attach images to prompts** for better contextual understanding.
-- **Integrated terminal** to view output of LLM-run commands.
-- **Revert code to earlier versions** for easier debugging and quicker changes.
-- **Download projects as ZIP** for easy portability.
-- **Integration-ready Docker support** for a hassle-free setup.
-
-## Setup 
-
-If you're new to installing software from GitHub, don't worry! The following instruction will help you get the stable branch up and running on your local machine in no time.  
-
-## Prerequisites
-
-Before you begin, you'll need to install two important pieces of software:
-
-### Install Node.js
-
-Node.js is required to run the application.
-
-1. Visit the [Node.js Download Page](https://nodejs.org/en/download/)
-2. Download the "LTS" (Long Term Support) version for your operating system
-3. Run the installer, accepting the default settings
-4. Verify Node.js is properly installed:
-   - **For Windows Users**:
-     1. Press `Windows + R`
-     2. Type "sysdm.cpl" and press Enter
-     3. Go to "Advanced" tab → "Environment Variables"
-     4. Check if `Node.js` appears in the "Path" variable
-   - **For Mac/Linux Users**:
-     1. Open Terminal
-     2. Type this command:
-        ```bash
-        echo $PATH
-        ```
-     3. Look for `/usr/local/bin` in the output
-
-## Running the Application
-
-You have two options for running directly on your machine or using Docker.
-
-### Option 1: Direct Installation (Recommended for Beginners)
-
-1. **Install Package Manager (pnpm)**:
-   ```bash
-   npm install -g pnpm
-   ```
-
-2. **Install Project Dependencies**:
-   ```bash
-   pnpm install
-   ```
-
-3. **Start the Application**:
-   ```bash
-   pnpm run dev
-   ```
-
-   **Important Note**: If you're using Google Chrome, you'll need Chrome Canary for local development. [Download it here](https://www.google.com/chrome/canary/)
-
-### Option 2: Using Docker
-
-This option requires some familiarity with Docker but provides a more isolated environment.
-
-#### Additional Prerequisite
-- Install Docker: [Download Docker](https://www.docker.com/)
-
-#### Steps:
-
-1. **Build the Docker Image**:
-   ```bash
-   # Using npm script:
-   npm run dockerbuild
-
-   # OR using direct Docker command:
-   docker build . --target bolt-ai-development
-   ```
-
-2. **Run the Container**:
-   ```bash
-   docker-compose --profile development up
-   ```
-
-
-
-
-## Configuring API Keys and Providers
-
-### Adding Your API Keys
-
-Setting up your API keys is straightforward:
-
-1. Open the home page (main interface)
-2. Select your desired provider from the dropdown menu
-3. Click the pencil (edit) icon
-4. Enter your API key in the secure input field
-
-![API Key Configuration Interface](./docs/images/api-key-ui-section.png)
-
-### Configuring Custom Base URLs
-
-For providers that support custom base URLs (such as Ollama or LM Studio), follow these steps:
-
-1. Click the settings icon in the sidebar to open the settings menu
-   ![Settings Button Location](./docs/images/bolt-settings-button.png)
-
-2. Navigate to the "Providers" tab
-3. Search for your provider using the search bar
-4. Enter your custom base URL in the designated field
-   ![Provider Base URL Configuration](./docs/images/provider-base-url.png)
-
-> **Note**: Custom base URLs are particularly useful when running local instances of AI models or using custom API endpoints.
-
-### Supported Providers
-- Ollama
-- LM Studio
-- OpenAILike
-
-## Setup Using Git (For Developers only)
-
-This method is recommended for developers who want to:
-- Contribute to the project
-- Stay updated with the latest changes
-- Switch between different versions
-- Create custom modifications
-
-#### Prerequisites
-1. Install Git: [Download Git](https://git-scm.com/downloads)
-
-#### Initial Setup
-
-1. **Clone the Repository**:
-   ```bash
-   # Using HTTPS
-   git clone https://github.com/.../...git
-   ```
-
-2. **Navigate to Project Directory**:
-   ```bash
-   cd ...
-   ```
-
-3. **Switch to the Main Branch**:
-   ```bash
-   git checkout main
-   ```
-4. **Install Dependencies**:
-   ```bash
-   pnpm install
-   ```
-
-5. **Start the Development Server**:
-   ```bash
-   pnpm run dev
-   ```
-
-#### Staying Updated
-
-To get the latest changes from the repository:
-
-1. **Save Your Local Changes** (if any):
-   ```bash
-   git stash
-   ```
-
-2. **Pull Latest Updates**:
-   ```bash
-   git pull origin main
-   ```
-
-3. **Update Dependencies**:
-   ```bash
-   pnpm install
-   ```
-
-4. **Restore Your Local Changes** (if any):
-   ```bash
-   git stash pop
-   ```
-
-#### Troubleshooting Git Setup
-
-If you encounter issues:
-
-1. **Clean Installation**:
-   ```bash
-   # Remove node modules and lock files
-   rm -rf node_modules pnpm-lock.yaml
-
-   # Clear pnpm cache
-   pnpm store prune
-
-   # Reinstall dependencies
-   pnpm install
-   ```
-
-2. **Reset Local Changes**:
-   ```bash
-   # Discard all local changes
-   git reset --hard origin/main
-   ```
-
-Remember to always commit your local changes or stash them before pulling updates to avoid conflicts.
+- **Localized Intelligence**: Provides region-specific recommendations and insights using curated agricultural datasets.
+- **Conversational AI**: Multilingual support for diverse agricultural communities.
+- **Predictive Capabilities**: Analyzes crop health, weather patterns, and market trends.
+- **Scalable Integration**: APIs for embedding AI-driven analytics into existing platforms.
 
 ---
 
-## Available Scripts
+## Use Cases
 
-- **`pnpm run dev`**: Starts the development server.
-- **`pnpm run build`**: Builds the project.
-- **`pnpm run start`**: Runs the built application locally using Wrangler Pages.
-- **`pnpm run preview`**: Builds and runs the production build locally.
-- **`pnpm test`**: Runs the test suite using Vitest.
-- **`pnpm run typecheck`**: Runs TypeScript type checking.
-- **`pnpm run typegen`**: Generates TypeScript types using Wrangler.
-- **`pnpm run deploy`**: Deploys the project to Cloudflare Pages.
-- **`pnpm run lint:fix`**: Automatically fixes linting issues.
+- **Farmers**: Access crop management tips, pest control measures, and weather forecasts.
+- **Agribusinesses**: Optimize supply chain logistics and resource planning.
+- **Policymakers**: Make data-driven decisions to support sustainable agriculture.
 
 ---
+
+## Getting Started
+
+### Prerequisites
+
+To set up the Agri-LLM prototype, ensure you have the following installed:
+
+- Python 3.8+
+- pip (Python package manager)
+- Git
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/DARJYO/agri-llm.git
+   cd agri-llm
+   ```
+
+2. Create a virtual environment:
+   ```bash
+   python3 -m venv env
+   source env/bin/activate  # On Windows, use `env\Scripts\activate`
+   ```
+
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the application:
+   ```bash
+   python app.py
+   ```
+
+---
+
+## API Endpoints
+
+Agri-LLM provides RESTful API endpoints for seamless integration:
+
+- `POST /predict`: Generate insights based on user input.
+- `GET /health`: Check the health status of the API.
+- `POST /train`: Fine-tune the model with custom datasets.
+
+Refer to the [API Documentation](docs/api.md) for detailed usage instructions.
+
+---
+
+## Architecture
+
+Agri-LLM is built on the following stack:
+
+- **Backend**: FastAPI for API handling.
+- **Model**: Hugging Face Transformers for NLP.
+- **Database**: PostgreSQL for storing user inputs and metadata.
+- **Frontend (optional)**: React for building user interfaces.
+
+---
+
+## Contributing
+
+We welcome contributions from the community! To contribute:
+
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push to your branch and submit a pull request:
+   ```bash
+   git push origin feature-name
+   ```
+
+For detailed guidelines, refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
+
+---
+
+## License
+
+Agri-LLM is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Acknowledgments
+
+Agri-LLM is powered by:
+
+- [Hugging Face](https://huggingface.co/)
+- [FastAPI](https://fastapi.tiangolo.com/)
+- [DARJYO](https://darjyo.com/) for their vision and support.
+
+---
+
+## Contact
+
+For inquiries, feedback, or collaboration opportunities, contact us at:
+
+- **Email**: support@darjyo.com
+- **Website**: [darjyo.com](https://darjyo.com/)
+- **GitHub Issues**: [Report a bug](https://github.com/DARJYO/agri-llm/issues)
+
+---
+
+Agri-LLM: Empowering agriculture with AI!
