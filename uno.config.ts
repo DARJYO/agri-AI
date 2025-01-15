@@ -109,7 +109,7 @@ export default defineConfig({
   },
   rules: [
     /**
-     * This shorthand doesn't exist in Tailwind and we overwrite it to avoid
+     * This shorthand does not exist in Tailwind and we overwrite it to avoid
      * any conflicts with minified CSS classes.
      */
     ['b', {}],
