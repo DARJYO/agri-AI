@@ -108,7 +108,7 @@ For detailed guidelines, refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-Agri-LLM is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Agri-LLM is licensed under the DARJYO License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -118,7 +118,7 @@ Agri-LLM is powered by:
 
 - [Hugging Face](https://huggingface.co/)
 - [FastAPI](https://fastapi.tiangolo.com/)
-- [DARJYO](https://darjyo.com/) for their vision and support.
+- [persadian](https://github.com/arishma108/) for their vision and support.
 
 ---
 
@@ -126,7 +126,7 @@ Agri-LLM is powered by:
 
 For inquiries, feedback, or collaboration opportunities, contact us at:
 
-- **Email**: support@darjyo.com
+- **Email**: info@darjyo.com
 - **Website**: [darjyo.com](https://darjyo.com/)
 - **GitHub Issues**: [Report a bug](https://github.com/DARJYO/agri-llm/issues)
 
