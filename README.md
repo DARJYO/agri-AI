@@ -1,11 +1,9 @@
 
-<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm.png" height="100%" width="100%">    
-<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm1.png" height="100%" width="100%">    
-
 # Agri-LLM
 
 Agri-LLM is an AI-powered language model tailored for the agriculture industry. It leverages natural language processing (NLP) to provide farmers, agribusinesses, and policymakers with actionable insights, predictive analytics, and multilingual conversational capabilities. Developed by DARJYO, Agri-LLM aims to revolutionize agricultural intelligence and foster sustainability.
 
+<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm.png" height="100%" width="100%">    
 ---
 
 ## Features
@@ -23,6 +21,7 @@ Agri-LLM is an AI-powered language model tailored for the agriculture industry. 
 - **Agribusinesses**: Optimize supply chain logistics and resource planning.
 - **Policymakers**: Make data-driven decisions to support sustainable agriculture.
 
+<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm1.png" height="100%" width="100%">    
 ---
 
 ## Getting Started
