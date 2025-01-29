@@ -1,10 +1,10 @@
 
-# Agri-LLM
+# Agri-AI
 
-Agri-LLM is an AI-powered language model tailored for the agriculture industry. It leverages natural language processing (NLP) to provide farmers, agribusinesses, and policymakers with actionable insights, predictive analytics, and multilingual conversational capabilities. Developed by DARJYO, Agri-LLM aims to revolutionize agricultural intelligence and foster sustainability.
+Agri-AI is an AI-powered language model tailored for the agriculture industry. It leverages natural language processing (NLP) to provide farmers, agribusinesses, and policymakers with actionable insights, predictive analytics, and multilingual conversational capabilities. Developed by DARJYO, Agri-AI aims to revolutionize agricultural intelligence and foster sustainability.
  
 ---
-<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm.png" height="100%" width="100%">   
+<img src="https://github.com/arishma108/arishma108/blob/main/assets/agriAI.png" height="100%" width="100%">   
 
 ## Features
 
@@ -23,13 +23,13 @@ Agri-LLM is an AI-powered language model tailored for the agriculture industry. 
 
 ---
 
-<img src="https://github.com/arishma108/arishma108/blob/main/assets/agrillm1.png" height="100%" width="100%">    
+<img src="https://github.com/arishma108/arishma108/blob/main/assets/agriAI1.png" height="100%" width="100%">    
 
 ## Getting Started
 
 ### Prerequisites
 
-To set up the Agri-LLM prototype, ensure you have the following installed:
+To set up the Agri-AI prototype, ensure you have the following installed:
 
 - Python 3.8+
 - pip (Python package manager)
@@ -39,8 +39,8 @@ To set up the Agri-LLM prototype, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/DARJYO/agri-llm.git
-   cd agri-llm
+   git clone https://github.com/DARJYO/agri-AI.git
+   cd agri-AI
    ```
 
 2. Create a virtual environment:
@@ -63,19 +63,19 @@ To set up the Agri-LLM prototype, ensure you have the following installed:
 
 ## API Endpoints
 
-Agri-LLM provides RESTful API endpoints for seamless integration:
+Agri-AI provides RESTful API endpoints for seamless integration:
 
 - `POST /predict`: Generate insights based on user input.
 - `GET /health`: Check the health status of the API.
 - `POST /train`: Fine-tune the model with custom datasets.
 
-Refer to the [API Documentation](docs/api.md) for detailed usage instructions.
+Refer to the API Documentation for detailed usage instructions.
 
 ---
 
 ## Architecture
 
-Agri-LLM is built on the following stack:
+Agri-AI is built on the following stack:
 
 - **Backend**: FastAPI for API handling.
 - **Model**: Hugging Face Transformers for NLP.
@@ -102,19 +102,16 @@ We welcome contributions from the community! To contribute:
    git push origin feature-name
    ```
 
-For detailed guidelines, refer to the [CONTRIBUTING.md](CONTRIBUTING.md).
-
 ---
 
 ## License
 
-Agri-LLM is licensed under the DARJYO License. See the [LICENSE](LICENSE) file for details.
-
+Agri-AI is licensed under the DARJYO License. 
 ---
 
 ## Acknowledgments
 
-Agri-LLM is powered by:
+Agri-AI is powered by:
 
 - [Hugging Face](https://huggingface.co/)
 - [FastAPI](https://fastapi.tiangolo.com/)
@@ -128,8 +125,8 @@ For inquiries, feedback, or collaboration opportunities, contact us at:
 
 - **Email**: info@darjyo.com
 - **Website**: [darjyo.com](https://darjyo.com/)
-- **GitHub Issues**: [Report a bug](https://github.com/DARJYO/agri-llm/issues)
+- **GitHub Issues**: [Report a bug](https://github.com/DARJYO/agri-AI/issues)
 
 ---
 
-Agri-LLM: Empowering agriculture with AI!
+Agri-AI: Empowering agriculture with AI!
